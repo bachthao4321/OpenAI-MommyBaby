@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # Cấu hình OpenAI API
-load_dotenv()
+load_dotenv(override=True)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 SYSTEM_PROMPT = """
