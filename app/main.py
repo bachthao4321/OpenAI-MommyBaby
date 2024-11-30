@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Cấu hình OpenAI API
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_kEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 SYSTEM_PROMPT = """
 Bạn là một chatbot tư vấn dinh dưỡng MommyBaby dành riêng cho bà bầu và trẻ sơ sinh. 
