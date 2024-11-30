@@ -1,9 +1,12 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import openai
+import os
+from dotenv import load_dotenv
 
 # Cấu hình OpenAI API
-openai.api_key = "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"
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_kEY")
 
 SYSTEM_PROMPT = """
 Bạn là một chatbot tư vấn dinh dưỡng MommyBaby dành riêng cho bà bầu và trẻ sơ sinh. 
